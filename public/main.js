@@ -1,17 +1,9 @@
-/*//YouTube API background for 2nd panel
-('#background-video').YTPPlayer({
-  fitToBackground: true,
-  videoId: 'nx8EZ4n9Y' //this needs an ID
-  
-  
-  
-})*/
 
 /*/Neatsy cool dynamic bubble thanks at the bottom     */
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
 var green = [75, 100, 30];
-var blue = [196, 77, 55];
+var blue = [138, 149, 168];
 var purple = [280, 50, 60];
 
 var myName = "Thank You!";
@@ -20,6 +12,17 @@ if (15> 5) {bubbleShape ="circle";}
 
 else {bubbleShape ="square"}
 drawName(myName, letterColors);
-bounceBubbles()
+bounceBubbles();
+
+
+//=====HAMBURGER MENU JS=======//
+
+$(".collapse navbar-collapse").on('click', function(e){
+  e.preventDefault();
+    $('.nav navbar-nav navbar-right')toggleClass('.');
+    
+});
+
+
 
 
